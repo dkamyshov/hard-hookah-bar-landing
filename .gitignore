@@ -1,4 +1,6 @@
 /.vscode/
 /node_modules/
+/build/
+/dist/
 hard-hookah-bar-landing.zip
 package-lock.json
