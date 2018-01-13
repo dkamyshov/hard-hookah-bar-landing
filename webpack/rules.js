@@ -16,7 +16,17 @@ module.exports = [
       loader: 'file-loader',
       options: {
         name: '[name].[ext]',
-        outputPath: './media/'
+        outputPath: 'media/images/'
+      }
+    }
+  },
+
+  {
+    test: /\.ttf$/, use: {
+      loader: 'file-loader',
+      options: {
+        name: '[sha1:hash:hex:4].[ext]',
+        outputPath: 'media/fonts/'
       }
     }
   },
