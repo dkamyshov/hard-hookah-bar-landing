@@ -2,13 +2,15 @@ var ExtractCSS = require('extract-text-webpack-plugin');
 
 module.exports = [
   {
-    test: /\.html$/, use: {
+    test: /\.html$/, use: [{
       loader: 'file-loader',
       options: {
         name: '[name].[ext]',
         outputPath: './'
       }
-    }
+    }, {
+      loader: 'html-minifier-loader'
+    }]
   },
 
   {
