@@ -22,7 +22,7 @@ module.exports = [
   },
 
   {
-    test: /\.ttf$/, use: {
+    test: /(\.ttf|\.woff2)$/, use: {
       loader: 'file-loader',
       options: {
         name: '[sha1:hash:hex:4].[ext]',
