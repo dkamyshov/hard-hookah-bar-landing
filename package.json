@@ -6,6 +6,7 @@
   "scripts": {
     "clean": "rm -rf ./dist",
     "build:watch": "node ./webpack/local.js",
+    "build:dev": "webpack --config ./webpack/webpack.dev.js",
     "build:production": "npm run clean && node ./webpack/production.js"
   },
   "author": "Danil Kamyshov",

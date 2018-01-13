@@ -18,6 +18,5 @@ module.exports = {
   },
   plugins: [
     new ExtractCSS('index.css')
-  ],
-  watch: true
+  ]
 }
