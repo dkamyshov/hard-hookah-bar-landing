@@ -10,26 +10,10 @@
   background-color: @color_background;
 }
 
-html, body, .application {
-  height: 100%;
-}
-
-body, .application {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.wrapper {
-  flex: 1 0 auto;
-  padding: 0px;
-}
-
 a {
   background: inherit;
   color: inherit;
   font-size: inherit;
-  text-decoration: none;
 }
 
 .phone-link {
@@ -38,20 +22,20 @@ a {
 
 .application {
   @import './style/nav.less';
-  @import './style/section.less';
-  @import './style/timetable.less';
   @import './style/icons.less';
-  @import './style/footer.less';
+  @import './style/content.less';
+  @import './style/wrapper.less';
+  @import './style/gallery.less';
 }
 
 .mshow {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 576px) {
     display: none !important;
   }
 }
 
 .mhide {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 576px) {
     display: none !important;
   }
 }

@@ -1,0 +1,21 @@
+@import './colors.less';
+
+.content {
+  @import './grid.less';
+
+  .description {
+    padding: 8pt;
+
+    @import './section.less';
+  }
+
+  @media screen and (max-width: 576px) {
+    .grid {
+      flex-direction: column;
+
+      .col-6 {
+        width: 100%;
+      }
+    }
+  }
+}

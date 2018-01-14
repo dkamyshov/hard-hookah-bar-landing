@@ -11,38 +11,15 @@
     background-color: inherit;
     color: @color_background;
     font-size: 18pt;
-    padding: 8pt;
-  }
-
-  .nav__menu {
-    display: flex;
-    align-items: baseline;
-    background-color: @color_foreground;
-
-    .nav__element {
-      background-color: @color_foreground;
-      color: @color_background;
-      cursor: pointer;
-      border-top: 3px solid @color_foreground;
-      padding: 4pt;
-      margin: 0 4pt;
-      transition: border-top-color 0.5s;
-
-      &:hover {
-        border-top-color: @color_highlight;
-        transition: border-top-color 0.3s;
-      }
-
-      &.active {
-        border-top-color: @color_active;
-        transition: border-top-color 0.3s;
-      }
-    }
+    margin: 8pt;
   }
 
   .nav__phone {
     background-color: inherit;
     color: @color_background;
     padding: 8pt;
+    a {
+      padding: 4pt;
+    }
   }
 }

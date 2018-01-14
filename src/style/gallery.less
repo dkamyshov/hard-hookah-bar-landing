@@ -1,0 +1,25 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+    div.img {
+      width: 100%;
+    }
+  }
+
+  div.img {
+    min-width: 33.33%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center !important;
+    background-size: cover !important;
+    flex-grow: 1;
+
+    &:last-child {
+      width: auto;
+    }
+  }
+}
