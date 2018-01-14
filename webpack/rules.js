@@ -14,13 +14,21 @@ module.exports = [
   },
 
   {
-    test: /(\.jpg|\.png)$/, use: {
+    test: /(\.jpg|\.png)$/, use: [{
       loader: 'file-loader',
       options: {
         name: '[name].[ext]',
         outputPath: 'media/images/'
       }
-    }
+    }, {
+      loader: 'image-webpack-loader',
+      options: {
+        mozjpeg: {
+          progressive: true,
+          quality: 25
+        }
+      }
+    }]
   },
 
   {
