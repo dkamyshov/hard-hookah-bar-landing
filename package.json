@@ -1,6 +1,6 @@
 {
   "name": "hard-hookah-bar-landing",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "The landing page for Hard Hookah Bar",
   "main": "./src/index.js",
   "scripts": {
@@ -17,6 +17,9 @@
     "express": "^4.16.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
+    "html-minifier": "^3.5.8",
+    "html-minifier-loader": "^1.4.0",
+    "image-webpack-loader": "^3.4.2",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "style-loader": "^0.19.1",
